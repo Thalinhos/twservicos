@@ -22,11 +22,11 @@ const ContactSection = () => {
               {/* Heading */}
               <div>
                 <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-                  Pronto para Transformar
-                  <span className="text-gradient-primary block mt-2">Seu Negócio?</span>
+                  Pronto para
+                  <span className="text-gradient-primary block mt-2">Decolar Seu Negócio?</span>
                 </h2>
                 <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
-                  Entre em contato agora e receba um orçamento personalizado. Vamos juntos construir a solução digital perfeita para o seu sucesso!
+                  Agende sua <span className="font-semibold text-primary">consultoria gratuita</span> agora mesmo. Vamos descobrir juntos a melhor solução digital para o seu sucesso!
                 </p>
               </div>
 
@@ -35,11 +35,11 @@ const ContactSection = () => {
                 <Button
                   variant="whatsapp"
                   size="xl"
-                  onClick={() => window.open("https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para meu projeto.", "_blank")}
+                  onClick={() => window.open("https://wa.me/5511999999999?text=Olá! Quero agendar minha consultoria gratuita.", "_blank")}
                   className="w-full sm:w-auto"
                 >
                   <MessageSquare className="mr-2 w-5 h-5" />
-                  Fale Conosco no WhatsApp
+                  Agendar Consultoria Gratuita
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </div>
@@ -48,15 +48,15 @@ const ContactSection = () => {
               <div className="flex flex-wrap items-center justify-center gap-8 pt-8 text-sm text-foreground/70">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full glow-primary-sm"></div>
+                  <span>100% Gratuito</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full glow-primary-sm"></div>
                   <span>Resposta em até 2h</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full glow-primary-sm"></div>
-                  <span>Orçamento sem compromisso</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full glow-primary-sm"></div>
-                  <span>Consultoria gratuita</span>
+                  <span>Sem compromisso</span>
                 </div>
               </div>
             </div>
