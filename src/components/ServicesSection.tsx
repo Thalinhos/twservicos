@@ -39,7 +39,6 @@ const ServicesSection = () => {
   return (
     <section id="servicos" className="py-20 lg:py-28 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
             O Que <span className="text-gradient-primary">Fazemos</span>
@@ -49,7 +48,6 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Services Grid - More Compact */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto mb-10">
           {services.map((service, index) => {
             const Icon = service.icon;
@@ -58,7 +56,6 @@ const ServicesSection = () => {
                 key={index}
                 className="bg-gradient-to-br from-card/80 via-card/60 to-secondary/10 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300 p-5 group hover:shadow-lg hover:shadow-black/5 hover:-translate-y-0.5 relative overflow-hidden"
               >
-                {/* Subtle glow on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                 <div className="flex flex-col h-full relative z-10">
@@ -77,7 +74,6 @@ const ServicesSection = () => {
           })}
         </div>
 
-        {/* CTA - More Compact */}
         <div className="text-center">
           <div className="inline-block bg-gradient-to-br from-card/80 to-secondary/20 backdrop-blur-sm border border-border/50 rounded-xl p-6 shadow-lg max-w-lg">
             <h3 className="text-xl font-bold text-foreground mb-2">

@@ -30,12 +30,10 @@ const BenefitsSection = () => {
 
   return (
     <section className="py-20 lg:py-28 bg-background relative overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-primary/5 blur-3xl rounded-full"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
               Por Que Escolher a TW
@@ -49,7 +47,6 @@ const BenefitsSection = () => {
             </p>
           </div>
 
-          {/* Benefits Grid - More Compact */}
           <div className="grid md:grid-cols-2 gap-5">
             {benefits.map((benefit, index) => (
               <div
@@ -57,20 +54,16 @@ const BenefitsSection = () => {
                 className="group bg-gradient-to-br from-card/80 via-card/60 to-secondary/10 backdrop-blur-sm border border-border/50 rounded-xl p-6 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-black/5 hover:-translate-y-0.5 animate-fade-in relative overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Subtle glow on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                 <div className="relative z-10">
-                  {/* Icon */}
                   <div className="w-14 h-14 bg-gradient-to-br from-primary/15 to-primary/5 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
                     <benefit.icon className="w-7 h-7 text-primary" />
                   </div>
 
-                  {/* Content */}
                   <h3 className="text-xl font-bold text-foreground mb-2">{benefit.title}</h3>
                   <p className="text-sm text-foreground/80 leading-relaxed mb-4">{benefit.description}</p>
 
-                  {/* Features List */}
                   <ul className="space-y-2">
                     {benefit.features.map((feature, i) => (
                       <li key={i} className="flex items-center gap-2.5 text-sm text-foreground/70">

@@ -40,7 +40,7 @@ const CasesSection = () => {
       result: "Automação de 80% do atendimento",
       before: "Atendimento manual via WhatsApp sem escala",
       after: "Chatbot inteligente + CRM integrado + Dashboard administrativo",
-      technologies: ["Python", "OpenAI", "PostgreSQL", "React"],
+      technologies: ["Python", "OpenAI", "MongoDB", "React"],
       testimonial: "Solução sob medida que revolucionou nossa operação. Time excepcional!",
       rating: 5,
     },
@@ -48,12 +48,10 @@ const CasesSection = () => {
 
   return (
     <section id="cases" className="py-20 lg:py-28 bg-background relative overflow-hidden">
-      {/* Background Glow */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
               Cases de Sucesso
@@ -67,7 +65,6 @@ const CasesSection = () => {
             </p>
           </div>
 
-          {/* Cases Grid - More Compact */}
           <div className="grid lg:grid-cols-2 gap-5">
             {cases.map((caseStudy, index) => (
               <Card
@@ -75,11 +72,9 @@ const CasesSection = () => {
                 className="group bg-gradient-to-br from-card/80 via-card/60 to-secondary/10 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-black/5 hover:-translate-y-0.5 animate-fade-in relative overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Subtle glow on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                 <CardContent className="p-6 relative z-10">
-                  {/* Header - More Compact */}
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3">
                       <div className="w-12 h-12 bg-gradient-to-br from-primary/15 to-primary/5 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
@@ -96,13 +91,11 @@ const CasesSection = () => {
                     </div>
                   </div>
 
-                  {/* Result Badge */}
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/15 border border-primary/20 rounded-full mb-4">
                     <TrendingUp className="w-3.5 h-3.5 text-primary" />
                     <span className="text-primary font-bold text-xs">{caseStudy.result}</span>
                   </div>
 
-                  {/* Before/After - More Compact */}
                   <div className="space-y-3 mb-4">
                     <div className="flex gap-2.5">
                       <div className="w-1 bg-destructive/50 rounded-full"></div>
@@ -120,7 +113,6 @@ const CasesSection = () => {
                     </div>
                   </div>
 
-                  {/* Technologies */}
                   <div className="flex flex-wrap gap-1.5 mb-4">
                     {caseStudy.technologies.map((tech, i) => (
                       <Badge key={i} variant="secondary" className="bg-secondary/70 text-xs px-2 py-0.5">
@@ -129,7 +121,6 @@ const CasesSection = () => {
                     ))}
                   </div>
 
-                  {/* Testimonial */}
                   <div className="p-3 bg-gradient-to-r from-secondary/40 to-secondary/20 border-l-2 border-primary rounded-r-lg">
                     <p className="text-sm text-foreground/90 italic leading-relaxed">"{caseStudy.testimonial}"</p>
                   </div>

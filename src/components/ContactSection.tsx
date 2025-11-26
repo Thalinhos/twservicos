@@ -4,22 +4,18 @@ import { MessageSquare, ArrowRight } from "lucide-react";
 const ContactSection = () => {
   return (
     <section id="contato" className="py-20 lg:py-32 bg-background relative overflow-hidden">
-      {/* Animated Background Glow */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-glow-pulse"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto">
-          {/* Main CTA Card */}
           <div className="bg-gradient-to-br from-card via-card to-secondary/30 border border-border rounded-3xl p-8 lg:p-16 text-center shadow-2xl shadow-black/10">
             <div className="max-w-3xl mx-auto space-y-8">
-              {/* Icon */}
               <div className="inline-flex w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl items-center justify-center mb-4">
                 <MessageSquare className="w-10 h-10 text-primary" />
               </div>
 
-              {/* Heading */}
               <div>
                 <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
                   Pronto para
@@ -30,7 +26,6 @@ const ContactSection = () => {
                 </p>
               </div>
 
-              {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                 <Button
                   variant="whatsapp"
@@ -44,7 +39,6 @@ const ContactSection = () => {
                 </Button>
               </div>
 
-              {/* Trust Indicators */}
               <div className="flex flex-wrap items-center justify-center gap-8 pt-8 text-sm text-foreground/70">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>

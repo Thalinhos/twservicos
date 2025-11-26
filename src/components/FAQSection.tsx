@@ -43,12 +43,10 @@ const FAQSection = () => {
 
   return (
     <section className="py-20 lg:py-32 bg-gradient-dark relative overflow-hidden">
-      {/* Background Pattern */}
       <div className="absolute inset-0 geometric-pattern opacity-20"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
               FAQ
@@ -62,7 +60,6 @@ const FAQSection = () => {
             </p>
           </div>
 
-          {/* Accordion */}
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem
@@ -80,7 +77,6 @@ const FAQSection = () => {
             ))}
           </Accordion>
 
-          {/* Bottom CTA */}
           <div className="mt-12 text-center">
             <p className="text-foreground/70 mb-4">Não encontrou sua dúvida?</p>
             <button

@@ -34,14 +34,11 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-dark border-t border-border relative overflow-hidden">
-      {/* Background Pattern */}
       <div className="absolute inset-0 geometric-pattern opacity-10"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Main Footer Content */}
         <div className="py-16 lg:py-20">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center gap-2 mb-6">
                 <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center glow-primary-sm">
@@ -69,7 +66,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Services Links */}
             <div>
               <h3 className="text-foreground font-bold text-lg mb-6">Serviços</h3>
               <ul className="space-y-3">
@@ -86,7 +82,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Company Links */}
             <div>
               <h3 className="text-foreground font-bold text-lg mb-6">Empresa</h3>
               <ul className="space-y-3">
@@ -105,15 +100,12 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-border py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            {/* Copyright */}
             <p className="text-foreground/60 text-sm text-center md:text-left">
               © {currentYear} TW Soluções Digitais. Todos os direitos reservados.
             </p>
 
-            {/* Social Links */}
             <div className="flex items-center gap-4">
               {socialLinks.map((social, index) => (
                 <a

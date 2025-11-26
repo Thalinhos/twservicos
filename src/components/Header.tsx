@@ -31,13 +31,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg" : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection("home")}>
             <div className="w-8 h-8 lg:w-10 lg:h-10 bg-primary rounded-lg flex items-center justify-center glow-primary-sm">
               <span className="text-background font-bold text-lg lg:text-xl">TW</span>
@@ -48,7 +46,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <button
@@ -69,7 +66,6 @@ const Header = () => {
             </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-foreground hover:text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -79,7 +75,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md border-b border-border shadow-lg animate-fade-in">
             <nav className="flex flex-col py-4 px-4 gap-2">
