@@ -47,46 +47,49 @@ const CasesSection = () => {
   ];
 
   return (
-    <section id="cases" className="py-20 lg:py-32 bg-background relative overflow-hidden">
+    <section id="cases" className="py-20 lg:py-28 bg-background relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
               Cases de Sucesso
             </span>
-            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
               Resultados que
               <span className="text-gradient-primary"> Falam por Si</span>
             </h2>
-            <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
-              Conheça empresas que transformaram seus negócios com nossas soluções digitais
+            <p className="text-base text-foreground/70 max-w-2xl mx-auto">
+              Conheça empresas que transformaram seus negócios com nossas soluções
             </p>
           </div>
 
-          {/* Cases Grid */}
-          <div className="grid lg:grid-cols-2 gap-8">
+          {/* Cases Grid - More Compact */}
+          <div className="grid lg:grid-cols-2 gap-5">
             {cases.map((caseStudy, index) => (
               <Card
                 key={index}
-                className="group bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 animate-fade-in"
+                className="group bg-gradient-to-br from-card/80 via-card/60 to-secondary/10 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-black/5 hover:-translate-y-0.5 animate-fade-in relative overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CardContent className="p-8">
-                  {/* Header */}
-                  <div className="flex items-start justify-between mb-6">
-                    <div className="flex items-center gap-4">
-                      <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors glow-primary-sm">
-                        <caseStudy.icon className="w-7 h-7 text-primary" />
+                {/* Subtle glow on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+                <CardContent className="p-6 relative z-10">
+                  {/* Header - More Compact */}
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-gradient-to-br from-primary/15 to-primary/5 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
+                        <caseStudy.icon className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold text-foreground">{caseStudy.client}</h3>
-                        <div className="flex items-center gap-1 mt-1">
+                        <h3 className="text-lg font-bold text-foreground">{caseStudy.client}</h3>
+                        <div className="flex items-center gap-1 mt-0.5">
                           {Array.from({ length: caseStudy.rating }).map((_, i) => (
-                            <Star key={i} className="w-4 h-4 text-primary fill-primary" />
+                            <Star key={i} className="w-3.5 h-3.5 text-primary fill-primary" />
                           ))}
                         </div>
                       </div>
@@ -94,41 +97,41 @@ const CasesSection = () => {
                   </div>
 
                   {/* Result Badge */}
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
-                    <TrendingUp className="w-4 h-4 text-primary" />
-                    <span className="text-primary font-bold text-sm">{caseStudy.result}</span>
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/15 border border-primary/20 rounded-full mb-4">
+                    <TrendingUp className="w-3.5 h-3.5 text-primary" />
+                    <span className="text-primary font-bold text-xs">{caseStudy.result}</span>
                   </div>
 
-                  {/* Before/After */}
-                  <div className="space-y-4 mb-6">
-                    <div className="flex gap-3">
+                  {/* Before/After - More Compact */}
+                  <div className="space-y-3 mb-4">
+                    <div className="flex gap-2.5">
                       <div className="w-1 bg-destructive/50 rounded-full"></div>
-                      <div>
-                        <p className="text-xs text-foreground/50 uppercase font-semibold mb-1">Antes</p>
-                        <p className="text-foreground/80">{caseStudy.before}</p>
+                      <div className="flex-1">
+                        <p className="text-xs text-foreground/50 uppercase font-semibold mb-0.5">Antes</p>
+                        <p className="text-sm text-foreground/80 leading-snug">{caseStudy.before}</p>
                       </div>
                     </div>
-                    <div className="flex gap-3">
-                      <div className="w-1 bg-primary rounded-full glow-primary-sm"></div>
-                      <div>
-                        <p className="text-xs text-primary uppercase font-semibold mb-1">Depois</p>
-                        <p className="text-foreground/80">{caseStudy.after}</p>
+                    <div className="flex gap-2.5">
+                      <div className="w-1 bg-primary rounded-full"></div>
+                      <div className="flex-1">
+                        <p className="text-xs text-primary uppercase font-semibold mb-0.5">Depois</p>
+                        <p className="text-sm text-foreground/80 leading-snug">{caseStudy.after}</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-1.5 mb-4">
                     {caseStudy.technologies.map((tech, i) => (
-                      <Badge key={i} variant="secondary" className="bg-secondary/50">
+                      <Badge key={i} variant="secondary" className="bg-secondary/70 text-xs px-2 py-0.5">
                         {tech}
                       </Badge>
                     ))}
                   </div>
 
                   {/* Testimonial */}
-                  <div className="p-4 bg-secondary/30 border-l-4 border-primary rounded-r-lg">
-                    <p className="text-foreground/90 italic">"{caseStudy.testimonial}"</p>
+                  <div className="p-3 bg-gradient-to-r from-secondary/40 to-secondary/20 border-l-2 border-primary rounded-r-lg">
+                    <p className="text-sm text-foreground/90 italic leading-relaxed">"{caseStudy.testimonial}"</p>
                   </div>
                 </CardContent>
               </Card>

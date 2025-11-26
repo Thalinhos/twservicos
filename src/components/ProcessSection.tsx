@@ -71,17 +71,17 @@ const ProcessSection = () => {
                 >
                   {/* Connection Line - Mobile */}
                   {index < steps.length - 1 && (
-                    <div className="lg:hidden absolute left-1/2 top-20 w-1 h-full bg-gradient-to-b from-primary to-transparent -ml-0.5 z-0"></div>
+                    <div className="lg:hidden absolute left-1/2 top-20 w-1 h-full bg-gradient-to-b from-primary/40 to-transparent -ml-0.5 z-0"></div>
                   )}
 
-                  <div className="relative bg-card border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 z-10">
+                  <div className="relative bg-gradient-to-br from-card via-card to-secondary/20 border border-border rounded-2xl p-6 hover:border-border/60 transition-all duration-300 hover:shadow-2xl hover:shadow-black/10 hover:-translate-y-1 z-10">
                     {/* Number Badge */}
-                    <div className="absolute -top-4 -right-4 w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-background shadow-lg glow-primary-sm">
+                    <div className="absolute -top-4 -right-4 w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center font-bold text-background shadow-lg">
                       {step.number}
                     </div>
 
                     {/* Icon */}
-                    <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors glow-primary-sm mx-auto">
+                    <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
                       <step.icon className="w-8 h-8 text-primary" />
                     </div>
 

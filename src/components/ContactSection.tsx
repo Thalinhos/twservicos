@@ -12,10 +12,10 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Main CTA Card */}
-          <div className="bg-gradient-to-br from-card via-card to-secondary/20 border-2 border-primary/30 rounded-3xl p-8 lg:p-16 text-center shadow-2xl shadow-primary/20 glow-primary">
+          <div className="bg-gradient-to-br from-card via-card to-secondary/30 border border-border rounded-3xl p-8 lg:p-16 text-center shadow-2xl shadow-black/10">
             <div className="max-w-3xl mx-auto space-y-8">
               {/* Icon */}
-              <div className="inline-flex w-20 h-20 bg-primary/10 rounded-2xl items-center justify-center mb-4 glow-primary-sm">
+              <div className="inline-flex w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl items-center justify-center mb-4">
                 <MessageSquare className="w-10 h-10 text-primary" />
               </div>
 
@@ -47,15 +47,15 @@ const ContactSection = () => {
               {/* Trust Indicators */}
               <div className="flex flex-wrap items-center justify-center gap-8 pt-8 text-sm text-foreground/70">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full glow-primary-sm"></div>
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
                   <span>100% Gratuito</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full glow-primary-sm"></div>
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
                   <span>Resposta em até 2h</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full glow-primary-sm"></div>
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
                   <span>Sem compromisso</span>
                 </div>
               </div>

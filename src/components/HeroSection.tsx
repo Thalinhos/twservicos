@@ -11,17 +11,17 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-dark">
-      {/* Geometric Pattern Background */}
-      <div className="absolute inset-0 geometric-pattern opacity-50"></div>
-      
-      {/* Animated Glow Orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }}></div>
+      {/* Honeycomb Pattern Background */}
+      <div className="absolute inset-0 honeycomb-pattern opacity-60"></div>
+
+      {/* Animated Glow Orbs - reduced opacity */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }}></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto text-center space-y-8 pt-20 pb-12">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/50 backdrop-blur-sm border border-primary/30 rounded-full text-sm animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/50 backdrop-blur-sm border border-border rounded-full text-sm animate-fade-in">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-foreground/90 font-medium">Transformação Digital de Excelência</span>
           </div>
@@ -34,7 +34,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Sites, sistemas e automação para alavancar sua empresa. 
+            Sites, sistemas e automação para alavancar sua empresa.
             Agende uma <span className="font-semibold text-primary">consultoria gratuita</span> e descubra as melhores soluções para você.
           </p>
 
@@ -57,21 +57,6 @@ const HeroSection = () => {
             >
               Ver Soluções
             </Button>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pt-12 lg:pt-16 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: "0.6s" }}>
-            {[
-              { number: "50+", label: "Projetos Entregues" },
-              { number: "98%", label: "Satisfação" },
-              { number: "24/7", label: "Suporte" },
-              { number: "100%", label: "Profissionalismo" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">{stat.number}</div>
-                <div className="text-sm text-foreground/70 font-medium">{stat.label}</div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
