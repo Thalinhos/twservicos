@@ -11,11 +11,7 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-dark">
-
       <div className="absolute inset-0 geometric-pattern opacity-50"></div>
-
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }}></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto text-center space-y-6 pt-10 pb-6">
@@ -34,7 +30,7 @@ const HeroSection = () => {
             <Button
               variant="whatsapp"
               size="xl"
-              onClick={() => window.open("https://wa.me/5511999999999?text=Olá! Quero agendar uma consultoria gratuita.", "_blank")}
+              onClick={() => window.open("https://wa.me/5551981302801?text=Olá! Quero agendar uma consultoria gratuita.", "_blank")}
               className="w-full sm:w-auto"
             >
               Consultoria Gratuita
@@ -48,6 +44,22 @@ const HeroSection = () => {
             >
               Ver Soluções
             </Button>
+          </div>
+
+          {/* Professional Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: "0.6s" }}>
+            <div className="p-6 rounded-2xl bg-secondary/30 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
+              <h3 className="text-lg font-semibold text-foreground mb-2">Desenvolvimento Web</h3>
+              <p className="text-sm text-foreground/70">Sites de alta performance e sistemas web sob medida para seu negócio.</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-secondary/30 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
+              <h3 className="text-lg font-semibold text-foreground mb-2">Automação Inteligente</h3>
+              <p className="text-sm text-foreground/70">Otimize processos e reduza custos com soluções automatizadas.</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-secondary/30 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-colors">
+              <h3 className="text-lg font-semibold text-foreground mb-2">Consultoria Digital</h3>
+              <p className="text-sm text-foreground/70">Estratégias personalizadas para acelerar sua transformação digital.</p>
+            </div>
           </div>
         </div>
       </div>

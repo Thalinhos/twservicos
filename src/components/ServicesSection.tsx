@@ -85,7 +85,7 @@ const ServicesSection = () => {
             <Button
               variant="whatsapp"
               size="lg"
-              onClick={() => window.open("https://wa.me/5511999999999?text=Olá! Quero agendar uma consultoria gratuita.", "_blank")}
+              onClick={() => window.open("https://wa.me/5551981302801?text=Olá! Quero agendar uma consultoria gratuita.", "_blank")}
             >
               <MessageSquare className="mr-2 w-5 h-5" />
               Agendar Consultoria Gratuita

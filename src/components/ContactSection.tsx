@@ -30,7 +30,7 @@ const ContactSection = () => {
                 <Button
                   variant="whatsapp"
                   size="xl"
-                  onClick={() => window.open("https://wa.me/5511999999999?text=Olá! Quero agendar minha consultoria gratuita.", "_blank")}
+                  onClick={() => window.open("https://wa.me/5551981302801?text=Olá! Quero agendar minha consultoria gratuita.", "_blank")}
                   className="w-full sm:w-auto"
                 >
                   <MessageSquare className="mr-2 w-5 h-5" />

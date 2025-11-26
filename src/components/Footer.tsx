@@ -19,7 +19,7 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: MessageSquare, href: "https://wa.me/5511999999999", label: "WhatsApp" },
+    { icon: MessageSquare, href: "https://wa.me/5551981302801", label: "WhatsApp" },
     { icon: Instagram, href: "https://instagram.com/twsolucoes", label: "Instagram" },
     { icon: Linkedin, href: "https://linkedin.com/company/twsolucoes", label: "LinkedIn" },
     { icon: Github, href: "https://github.com/twsolucoes", label: "GitHub" },
@@ -54,14 +54,14 @@ const Footer = () => {
               </p>
               <div className="flex items-center gap-3 mb-4">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:contato@twsolucoes.com.br" className="text-foreground/80 hover:text-primary transition-colors">
-                  contato@twsolucoes.com.br
+                <a href="mailto:contatotwservicos@gmail.com" className="text-foreground/80 hover:text-primary transition-colors">
+                  contatotwservicos@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <MessageSquare className="w-5 h-5 text-primary" />
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors">
-                  (11) 99999-9999
+                <a href="https://wa.me/5551981302801" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors">
+                  (51) 98130-2801
                 </a>
               </div>
             </div>

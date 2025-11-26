@@ -80,7 +80,7 @@ const FAQSection = () => {
           <div className="mt-12 text-center">
             <p className="text-foreground/70 mb-4">Não encontrou sua dúvida?</p>
             <button
-              onClick={() => window.open("https://wa.me/5511999999999?text=Olá! Tenho uma dúvida sobre os serviços.", "_blank")}
+              onClick={() => window.open("https://wa.me/5551981302801?text=Olá! Tenho uma dúvida sobre os serviços.", "_blank")}
               className="text-primary hover:text-primary/80 font-semibold underline underline-offset-4 transition-colors"
             >
               Fale conosco no WhatsApp →
