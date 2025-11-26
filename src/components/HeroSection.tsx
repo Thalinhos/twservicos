@@ -28,13 +28,14 @@ const HeroSection = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-tight animate-fade-in-up">
-            Soluções Digitais para
-            <span className="text-gradient-primary block mt-2">Impulsionar Seu Negócio</span>
+            Transforme Seu Negócio com
+            <span className="text-gradient-primary block mt-2">Soluções Digitais</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Desenvolvimento web profissional, automação inteligente e consultoria especializada para transformar sua presença digital em resultados reais.
+            Sites, sistemas e automação para alavancar sua empresa. 
+            Agende uma <span className="font-semibold text-primary">consultoria gratuita</span> e descubra as melhores soluções para você.
           </p>
 
           {/* CTA Buttons */}
@@ -42,10 +43,10 @@ const HeroSection = () => {
             <Button
               variant="whatsapp"
               size="xl"
-              onClick={() => window.open("https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento.", "_blank")}
+              onClick={() => window.open("https://wa.me/5511999999999?text=Olá! Quero agendar uma consultoria gratuita.", "_blank")}
               className="w-full sm:w-auto"
             >
-              Solicitar Orçamento
+              Consultoria Gratuita
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button
@@ -54,7 +55,7 @@ const HeroSection = () => {
               onClick={() => scrollToSection("servicos")}
               className="w-full sm:w-auto"
             >
-              Conhecer Serviços
+              Ver Soluções
             </Button>
           </div>
 
