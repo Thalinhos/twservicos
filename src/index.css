@@ -74,6 +74,25 @@
     background-size: 56px 100px;
     background-position: 0 0;
   }
+
+  /* Animação da linha do ProcessSection */
+  @keyframes line-glow {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.3;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-line-glow {
+    animation: line-glow 2s ease-out forwards;
+  }
 }
 
 @layer base {

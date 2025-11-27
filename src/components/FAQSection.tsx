@@ -71,10 +71,10 @@ const FAQSection = () => {
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="bg-gradient-to-br from-card/90 via-card/80 to-secondary/20 backdrop-blur-md border-2 border-border/60 rounded-2xl px-7 hover:border-primary/40 transition-all duration-500 data-[state=open]:border-primary/60 data-[state=open]:shadow-md data-[state=open]:shadow-primary/8 data-[state=open]:bg-gradient-to-br data-[state=open]:from-card/95 data-[state=open]:via-card/90 data-[state=open]:to-primary/5 overflow-hidden relative group"
+                  className="bg-gradient-to-br from-card/90 via-card/80 to-secondary/20 backdrop-blur-md border-2 border-border/60 rounded-2xl px-7 hover:border-primary/40 transition-all duration-500 data-[state=open]:border-primary/60 data-[state=open]:shadow-md data-[state=open]:shadow-primary/8 data-[state=open]:bg-gradient-to-br data-[state=open]:from-card/95 data-[state=open]:via-card/90 data-[state=open]:to-primary/2 overflow-hidden relative group"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent opacity-0 group-data-[state=open]:opacity-100 transition-opacity duration-500"></div>
-                  <div className="absolute -top-20 -right-20 w-32 h-32 bg-primary/20 rounded-full blur-3xl opacity-0 group-data-[state=open]:opacity-100 transition-opacity duration-700"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-primary/2 to-transparent opacity-0 group-data-[state=open]:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute -top-20 -right-20 w-32 h-32 bg-primary/8 rounded-full blur-3xl opacity-0 group-data-[state=open]:opacity-100 transition-opacity duration-700"></div>
 
                   <AccordionTrigger className="text-left text-foreground hover:text-primary text-base lg:text-lg font-semibold py-7 hover:no-underline relative z-10 transition-all duration-300 data-[state=open]:text-primary">
                     {faq.question}

@@ -7,37 +7,23 @@ const CasesSection = () => {
     {
       client: "Bazar Elegance",
       category: "E-Commerce",
-      image: "bg-gradient-to-br from-pink-500/20 to-rose-500/20",
+      image: "/elegance.PNG",
       result: "Vendas",
-      description: "Implementação de loja virtual completa com integração de pagamentos e recuperação de carrinho.",
+      description: "E-commerce completo com sistema de catálogo de produtos, carrinho de compras e integração de pagamentos.",
     },
     {
-      client: "Clínica Odontológica Uteich",
-      category: "Sistema Web",
-      image: "bg-gradient-to-br from-blue-500/20 to-cyan-500/20",
+      client: "Clínica Odontológica",
+      category: "Sistema Web + CMS",
+      image: "/clinicaOdontologica.PNG",
       result: "Agendamentos",
-      description: "Página de alta conversão focada em agendamento de consultas via WhatsApp.",
-    },
-    {
-      client: "GameHub",
-      category: "Site Blog",
-      image: "bg-gradient-to-br from-orange-500/20 to-red-500/20",
-      result: "Leads",
-      description: "Site profissional com otimização SEO para atrair mais clientes.",
-    },
-    {
-      client: "Tech Quebrada",
-      category: "Sistema Web",
-      image: "bg-gradient-to-br from-purple-500/20 to-indigo-500/20",
-      result: "Automação Total",
-      description: "Dashboard administrativo personalizado para gestão de processos internos.",
+      description: "Site institucional com CMS para agendamento de clientes, permitindo gestão eficiente de consultas odontológicas.",
     },
     {
       client: "Canil Zannine",
       category: "Sistema CMS",
-      image: "bg-gradient-to-br from-purple-500/20 to-indigo-500/20",
-      result: "Automação Total",
-      description: "Dashboard administrativo personalizado para gestão de contéudo do Site.",
+      image: "/canilzannine.PNG",
+      result: "Gestão de Conteúdo",
+      description: "Sistema CMS completo para cadastro e gerenciamento de conteúdo do site, incluindo filhotes, galeria e informações.",
     },
   ];
 
@@ -64,7 +50,11 @@ const CasesSection = () => {
           {cases.map((item, index) => (
             <ScrollAnimation key={index} delay={index * 0.1}>
               <div className="group relative aspect-video rounded-2xl overflow-hidden border border-border/50 bg-secondary/30 cursor-pointer">
-                <div className={`absolute inset-0 ${item.image} transition-transform duration-500 group-hover:scale-105`}></div>
+                <img
+                  src={item.image}
+                  alt={item.client}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-0 transition-opacity duration-300"></div>
 

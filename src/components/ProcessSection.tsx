@@ -57,9 +57,11 @@ const ProcessSection = () => {
           </ScrollAnimation>
 
           <div className="relative">
-            <div className="hidden lg:block absolute top-24 left-0 right-0 h-1 bg-border/50">
-              <div className="h-full w-full bg-gradient-to-r from-primary via-primary/50 to-primary"></div>
-            </div>
+            <ScrollAnimation>
+              <div className="hidden lg:block absolute top-24 left-0 right-0 h-1 bg-border/50 z-0">
+                <div className="h-full w-full bg-gradient-to-r from-primary via-primary/50 to-primary animate-line-glow"></div>
+              </div>
+            </ScrollAnimation>
             <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-4 items-stretch">
               {steps.map((step, index) => (
                 <ScrollAnimation key={index} delay={index * 0.15} className="relative group h-full">
