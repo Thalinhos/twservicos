@@ -18,7 +18,7 @@ const HeroSection = () => {
 
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-tight animate-fade-in-down">
             Transforme Seu Negócio com
-            <span className="text-gradient-primary block mt-2">Soluções Digitais</span>
+            <span className="text-gradient-primary block mt-2 p-4">Soluções Digitais</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed animate-slide-in-left" style={{ animationDelay: "0.2s" }}>
