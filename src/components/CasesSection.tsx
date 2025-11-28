@@ -57,6 +57,7 @@ const CasesSection = () => {
                 <img
                   src={item.image}
                   alt={item.client}
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 

@@ -7,12 +7,12 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Code,
-      title: "Sites & Landing Pages",
+      title: "Criação de Sites & Landing Pages",
       description: "Presença digital profissional para seu negócio."
     },
     {
       icon: ShoppingCart,
-      title: "E-Commerce",
+      title: "Criação de Loja Virtual (E-Commerce)",
       description: "Loja virtual completa e integrada."
     },
     {

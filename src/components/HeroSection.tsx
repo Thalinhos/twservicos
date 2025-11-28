@@ -22,8 +22,8 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg sm:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed animate-slide-in-left" style={{ animationDelay: "0.2s" }}>
-            Sites, sistemas e automação para alavancar sua empresa.
-            Agende uma <span className="font-semibold text-primary">consultoria gratuita</span> e descubra as melhores soluções para você.
+            Especialistas em <strong>criação de sites</strong>, <strong>lojas virtuais</strong> e automação para alavancar sua empresa.
+            Agende uma <span className="font-semibold text-primary">consultoria gratuita</span> e descubra quanto custa ter um site profissional.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
